@@ -11,16 +11,22 @@ if (time == partyTime){
 	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/partyTime.jpg";
     messageText = "IZ PARTEE TIME!!";
 }else if (time == napTime){
+	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat4.jpg";
     messageText = "IZ NAP TIME...";
 }else if (time == lunchTime){
+	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat2.jpg";
     messageText = "IZ NOM NOM NOM TIME!!";
 }else if (time == wakeupTime){
+	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat1.jpg";
     messageText = "IZ TIME TO GETTUP.";
 }else if (time < noon){
+	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat4.jpg";
     messageText = "Good morning, Mate!";
 }else if (time > evening){
+	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat4.jpg";
     messageText = "Good Evening, Mate!";
 }else{
+	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat4.jpg";
     messageText = "Good afternoon, Mate!";
 }
  
