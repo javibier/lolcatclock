@@ -8,6 +8,7 @@ var partyTime = 17; // 5PM
 var napTime = lunchTime + 2; // 2PM
  
 if (time == partyTime){
+	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/partyTime.jpg";
     messageText = "IZ PARTEE TIME!!";
 }else if (time == napTime){
     messageText = "IZ NAP TIME...";
