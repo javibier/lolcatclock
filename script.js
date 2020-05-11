@@ -32,5 +32,7 @@ if (time == partyTime){
 	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat4.jpg";
     messageText = "Good afternoon, Mate!";
 }
+
+lolcat.src = image;
  
 console.log(messageText);
