@@ -6,6 +6,9 @@ var wakeupTime = 9; // 9AM
 var lunchTime = 12; // 12PM
 var partyTime = 17; // 5PM
 var napTime = lunchTime + 2; // 2PM
+var lolcat = document.getElementById ('lolcat');
+
+var image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/wakeUpTime.jpg";
  
 if (time == partyTime){
 	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/partyTime.jpg";
