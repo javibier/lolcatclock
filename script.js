@@ -128,7 +128,9 @@ var partyEvent = function() {
         // if isPartyTime is true, change it to false to end the party
         isPartyTime = false; 
         // set time back to the current time
-        time = new Date().getHours(); 
+        time = new Date().getHours();
+        partyTimeButton.innerText = "PARTY OVER";
+        partyTimeButton.style.backgroundColor = "#0A8DAB";
     }
   
     isPartyTime.innerText = partyEvent;
