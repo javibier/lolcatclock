@@ -37,6 +37,9 @@ lolcat.src = image;
  
 console.log(messageText);
 
+var updateClock = function ()
+{
+
 var showCurrentTime = function()
 {
     // display the string on the webpage
@@ -78,3 +81,5 @@ var showCurrentTime = function()
 };
 
 showCurrentTime ();
+
+};
