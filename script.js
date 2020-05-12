@@ -108,6 +108,8 @@ lolcatButton.addEventListener("click", showMeTheLolcat);
 
 // set isPartyTime to false
 
+var partyTimeButton = document.getElementById("partyTimeButton");
+
  
 var partyEvent = function() {
    
@@ -118,7 +120,10 @@ var partyEvent = function() {
         isPartyTime = true; 
         // set time to partyTime so the lolCat clock 
         //image and message update to the partyTime image and message
-        time = partyTime; 
+        time = partyTime;
+        partyTimeButton.innerText = "PARTY TIME!";
+        partyTimeButton.style.backgroundColor = "#222";
+
     } else { 
         // if isPartyTime is true, change it to false to end the party
         isPartyTime = false; 
