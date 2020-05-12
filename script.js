@@ -125,5 +125,11 @@ var partyEvent = function() {
         // set time back to the current time
         time = new Date().getHours(); 
     }
+  
+    isPartyTime.innerText = partyEvent;
+
+
  
 };
+
+updatepartyEvent();
