@@ -1,5 +1,5 @@
 // NATIVE JAVASCRIPT CODE: represents current hour (1-24)
-var messageText;
+
 var noon = 12;
 var evening = 18; // 6PM
 var wakeupTime = 9; // 9AM
@@ -8,8 +8,12 @@ var partyTime = 17; // 5PM
 var napTime = lunchTime + 2; // 2PM
 var time = new Date().getHours();
 
+var updateClock = function ()
+{
 
 var lolcat = document.getElementById ('lolcat');
+var message = document.getElementById ('timeEvent');
+var messageText;
 
 var image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/wakeUpTime.jpg";
  
@@ -40,8 +44,6 @@ lolcat.src = image;
  
 console.log(messageText);
 
-var updateClock = function ()
-{
 
 var showCurrentTime = function()
 {
