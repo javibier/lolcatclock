@@ -11,8 +11,8 @@ var time = new Date().getHours();
 var updateClock = function ()
 {
 
-var lolcat = document.getElementById ('lolcat');
-var message = document.getElementById ('timeEvent');
+var lolcat = document.getElementById ("lolcat");
+var message = document.getElementById ("timeEvent");
 var messageText;
 
 var image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/wakeUpTime.jpg";
@@ -40,16 +40,17 @@ if (time == partyTime){
     messageText = "Good afternoon, Mate!";
 }
 
-message.innerText = messageText
+message.innerText = messageText;
 lolcat.src = image;
 
 showCurrentTime ();
 
+};
 
 var showCurrentTime = function()
 {
     // display the string on the webpage
-    var clock = document.getElementById('clock');
+    var clock = document.getElementById ("clock");
  
     var currentTime = new Date();
     var hours = currentTime.getHours();
@@ -83,10 +84,6 @@ var showCurrentTime = function()
     var clockTime = hours + ":" + minutes + ":" + seconds + " " + meridian + "!";
  
     clock.innerText = clockTime;
-};
-
-showCurrentTime ();
-
 };
 
 updateClock();
