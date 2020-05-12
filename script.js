@@ -40,9 +40,10 @@ if (time == partyTime){
     messageText = "Good afternoon, Mate!";
 }
 
+message.innerText = messageText
 lolcat.src = image;
- 
-console.log(messageText);
+
+showCurrentTime ();
 
 
 var showCurrentTime = function()
@@ -51,7 +52,6 @@ var showCurrentTime = function()
     var clock = document.getElementById('clock');
  
     var currentTime = new Date();
- 
     var hours = currentTime.getHours();
     var minutes = currentTime.getMinutes();
     var seconds = currentTime.getSeconds();
