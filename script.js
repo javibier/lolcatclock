@@ -76,3 +76,5 @@ var showCurrentTime = function()
  
     clock.innerText = clockTime;
 };
+
+showCurrentTime ();
