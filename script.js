@@ -85,3 +85,5 @@ showCurrentTime ();
 };
 
 updateClock();
+
+var oneSecond = 1000;
