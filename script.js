@@ -132,11 +132,7 @@ var partyEvent = function() {
         partyTimeButton.innerText = "PARTY OVER";
         partyTimeButton.style.backgroundColor = "#0A8DAB";
     }
-  
-    isPartyTime.innerText = partyEvent;
-
-
  
 };
 
-updatepartyEvent();
+partyTimeButton.addEventListener('click', partyEvent);
