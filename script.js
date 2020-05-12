@@ -83,3 +83,5 @@ var showCurrentTime = function()
 showCurrentTime ();
 
 };
+
+updateClock();
