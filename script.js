@@ -8,6 +8,10 @@ var partyTime = 17; // 5PM
 var napTime = lunchTime + 2; // 2PM
 var time = new Date().getHours();
 
+var oneSecond = 1000;
+
+var isPartyTime = false;
+
 var updateClock = function ()
 {
 
@@ -88,7 +92,7 @@ var showCurrentTime = function()
 
 updateClock();
 
-var oneSecond = 1000;
+
 
 setInterval( updateClock, oneSecond);
 
@@ -103,7 +107,7 @@ var showMeTheLolcat = function(){
 lolcatButton.addEventListener("click", showMeTheLolcat);
 
 // set isPartyTime to false
-var isPartyTime = false;
+
  
 var partyEvent = function() {
    
