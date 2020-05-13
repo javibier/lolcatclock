@@ -109,7 +109,9 @@ lolcatButton.addEventListener("click", showMeTheLolcat);
 // set isPartyTime to false
 
 var partyTimeButton = document.getElementById("partyTimeButton");
-
+var wakeUpTimeSelector =  document.getElementById("wakeUpTimeSelector");
+var lunchTimeSelector =  document.getElementById("lunchTimeSelector");
+var napTimeSelector =  document.getElementById("napTimeSelector");
  
 var partyEvent = function() {
    
@@ -135,13 +137,6 @@ var partyEvent = function() {
  
 };
 
-partyTimeButton.addEventListener('click', partyEvent);
-
-    
-var wakeUpTimeSelector =  document.getElementById("wakeUpTimeSelector");
-var lunchTimeSelector =  document.getElementById("lunchTimeSelector");
-var napTimeSelector =  document.getElementById("napTimeSelector");
-
 var wakeUpEvent = function()
 {  
     wakeUpTime = wakeUpTimeSelector.value;
@@ -149,14 +144,16 @@ var wakeUpEvent = function()
 
 var lunchEvent = function ()
 {
-    lunchTime = luchTimeSelector.value;
-}
+    lunchTime = lunchTimeSelector.value;
+};
 
 var napEvent  = function ()
 {
     napTime = napTimeSelector.value;
-}
-    
+};
+
+
+partyTimeButton.addEventListener('click', partyEvent);    
 wakeUpTimeSelector.addEventListener('change', wakeUpEvent);
 lunchTimeSelector.addEventListener('change', lunchEvent);
 napTimeSelector.addEventListener('change', napEvent);
