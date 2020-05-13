@@ -139,6 +139,8 @@ partyTimeButton.addEventListener('click', partyEvent);
 
     
 var wakeUpTimeSelector =  document.getElementById("wakeUpTimeSelector");
+var lunchTimeSelector =  document.getElementById("lunchTimeSelector");
+var napTimeSelector =  document.getElementById("napTimeSelector");
 
 var wakeUpEvent = function()
 {  
