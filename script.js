@@ -147,14 +147,16 @@ var wakeUpEvent = function()
     wakeUpTime = wakeUpTimeSelector.value;
 };
 
-var lunchEvent - function ()
+var lunchEvent = function ()
 {
     lunchTime = luchTimeSelector.value;
 }
 
-var napTime  = function ()
+var napEvent  = function ()
 {
     napTime = napTimeSelector.value;
 }
     
 wakeUpTimeSelector.addEventListener('change', wakeUpEvent);
+lunchTimeSelector.addEventListener('change', lunchEvent);
+napTimeSelector.addEventListener('change', napEvent);
