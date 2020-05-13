@@ -94,7 +94,6 @@ var showCurrentTime = function()
 updateClock();
 
 
-
 setInterval( updateClock, oneSecond);
 
 var lolcatButton = document.getElementById("lolcatButton");
@@ -107,9 +106,8 @@ var showMeTheLolcat = function(){
  
 lolcatButton.addEventListener("click", showMeTheLolcat);
 
+
 // set isPartyTime to false
-
-
 
  
 var partyEvent = function() {
