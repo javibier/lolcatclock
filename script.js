@@ -136,3 +136,14 @@ var partyEvent = function() {
 };
 
 partyTimeButton.addEventListener('click', partyEvent);
+
+    
+var wakeUpTimeSelector =  document.getElementById("wakeUpTimeSelector");
+
+var wakeUpEvent = function()
+{
+    wakeUpTime = wakeUpTimeSelector.value;
+};
+
+    
+wakeUpTimeSelector.addEventListener('change', wakeUpEvent);
