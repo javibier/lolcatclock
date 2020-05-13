@@ -108,7 +108,10 @@ lolcatButton.addEventListener("click", showMeTheLolcat);
 
 // set isPartyTime to false
 
+$(document).ready(function () {
+
 var partyTimeButton = document.getElementById("partyTimeButton");
+
 var wakeUpTimeSelector =  document.getElementById("wakeUpTimeSelector");
 var lunchTimeSelector =  document.getElementById("lunchTimeSelector");
 var napTimeSelector =  document.getElementById("napTimeSelector");
@@ -153,7 +156,10 @@ var napEvent  = function ()
 };
 
 
-partyTimeButton.addEventListener('click', partyEvent);    
+//partyTimeButton.addEventListener('click', partyEvent);
+$("#partyTimeButton").click(partyEvent);   
 wakeUpTimeSelector.addEventListener('change', wakeUpEvent);
 lunchTimeSelector.addEventListener('change', lunchEvent);
 napTimeSelector.addEventListener('change', napEvent);
+
+});
