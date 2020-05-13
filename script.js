@@ -104,7 +104,8 @@ var showMeTheLolcat = function(){
     lolcatImage.src = image;
 };
  
-lolcatButton.addEventListener("click", showMeTheLolcat);
+//lolcatButton.addEventListener("click", showMeTheLolcat);
+$("#lolcatButton").click (showMeTheLolcat);
 
 // set isPartyTime to false
 
