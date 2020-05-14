@@ -100,12 +100,20 @@ var lolcatButton = document.getElementById("lolcatButton");
 var lolcatImage = document.getElementById("lolcatImage");
 var image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/napTime.jpg";
  
-var showMeTheLolcat = function(){
-    lolcatImage.src = image;
-}
-
-//lolcatButton.addEventListener("click", showMeTheLolcat);
-$("#lolcatButton").click (showMeTheLolcat);
+ 
+$(document).ready(function(){
+ 
+    var lolcatImage = document.getElementById("lolcatImage");
+    var image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/napTime.jpg";
+ 
+    var showMeTheLolcat = function(){
+        lolcatImage.src = image;
+        prompt("Do you really want to see the LOLCat?");
+    };
+ 
+    $("#lolcatButton").click(showMeTheLolcat);
+ 
+});
 
 // set isPartyTime to false
 
