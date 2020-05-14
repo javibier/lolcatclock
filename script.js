@@ -100,18 +100,10 @@ var lolcatButton = document.getElementById("lolcatButton");
 var lolcatImage = document.getElementById("lolcatImage");
 var image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/napTime.jpg";
  
-
-function doYouWantToSeeFunction () {
-    var yesorno = prompt("Do you really want to see the LOL Cat");
-    if (yesorno i === yes) {
-        var showMeTheLolcat = function(){
-            lolcatImage.src = image;
-        }
-    else 
-    }
+var showMeTheLolcat = function(){
+    lolcatImage.src = image;
 }
 
- 
 //lolcatButton.addEventListener("click", showMeTheLolcat);
 $("#lolcatButton").click (showMeTheLolcat);
 
